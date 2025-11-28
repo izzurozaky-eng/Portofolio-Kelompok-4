@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Kelompok 4</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+     @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-slide-up {
+    animation: slideUp 1.3s ease-out forwards;
+  }
+
+    .btn-main {
+      padding: 0.6rem 1.4rem;
+      border-radius: 0.75rem;
+      font-weight: 600;
+      background: #0f172a;
+      color: white;
+    }
+    .btn-main:hover { opacity: 0.85; }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 1.5rem;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 9999px;
+      object-fit: cover;
+      border: 2px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="py-6 border-b bg-white">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-6">
+      <h1 class="text-xl font-semibold">MyPortfolio</h1>
+      <nav class="flex gap-6 text-sm">
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+ <section class="w-full bg-[#262735] text-white py-20">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-6">
+
+    <!-- TEXT LEFT -->
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+        Frontend Developer <br /> & UI/UX Designer
+      </h1>
+
+      <p class="text-gray-300 mb-6 leading-relaxed">
+        Membuat website modern, cepat, dan estetis dengan pendekatan minimalis 
+        dan pengalaman pengguna yang intuitif.
+      </p>
+
+      <button class="px-6 py-3 bg-yellow-500 text-black font-semibold rounded-lg hover:bg-yellow-400 transition">
+        Hire Me
+      </button>
+    </div>
+
+    <!-- IMAGE RIGHT -->
+<div class="relative flex justify-center">
+  <!-- background circle -->
+  <div class="absolute w-80 h-80 md:w-96 md:h-96 bg-[#2f3042] rounded-full"></div>
+
+  <!-- hero photo -->
+  <img 
+    src="your-image.png"
+    class="relative w-64 md:w-80 rounded-lg transition transform duration-300 hover:scale-105 hover:brightness-110 animate-slide-up"
+  />
+</div>
+
+
+      <!-- badge -->
+      <div class="absolute bottom-4 bg-gray-800 px-4 py-1 rounded-full text-sm font-semibold shadow-lg">
+        5+ work experience
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-5xl mx-auto px-6 py-14">
+    <h3 class="text-2xl font-bold mb-6">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <div class="card">
+        <h4 class="text-lg font-semibold mb-2">Project Landing Page</h4>
+        <p class="text-sm text-gray-600 mb-4">Website company profile modern dan responsif.</p>
+        <button class="btn-main">View</button>
+      </div>
+
+      <div class="card">
+        <h4 class="text-lg font-semibold mb-2">Dashboard UI</h4>
+        <p class="text-sm text-gray-600 mb-4">Dashboard admin minimalis dengan React.</p>
+        <button class="btn-main">View</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="max-w-5xl mx-auto px-6 py-14">
+    <h3 class="text-2xl font-bold mb-4">About Me</h3>
+    <div class="card">
+      <p class="text-gray-700 leading-relaxed">
+        Saya adalah seorang Frontend Developer yang fokus pada React dan desain minimalis.
+        Tujuan saya adalah membuat pengalaman pengguna yang sederhana, cepat, dan menyenangkan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="max-w-5xl mx-auto px-6 py-14">
+    <h3 class="text-2xl font-bold mb-4">Contact</h3>
+    <div class="card">
+      <p class="text-gray-700">Email: yourname@example.com</p>
+      <p class="text-gray-700">LinkedIn: linkedin.com/in/yourprofile</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center border-t">
+    <p class="text-gray-500 text-sm">© 2025 Your Name — Minimalist Portfolio</p>
+  </footer>
+
+</body>
+</html>
