@@ -1,34 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>About Me - MyPortfolio</title>
+
+    <style>
+        /* Tambahkan animasi yang konsisten dengan halaman lain */
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(60px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-up {
+            animation: slideUp 1s ease-out forwards;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- NAVBAR (SAMA PERSIS DENGAN INDEX.HTML) -->
-  <header class="py-6 border-b bg-white shadow-sm">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
-      <h1 class="text-xl font-semibold">MyPortfolio</h1>
+    <header class="py-5 border-b bg-white shadow-md sticky top-0 z-10">
+        <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
 
-      <nav class="flex gap-6 text-sm font-medium">
-        <a href="index.html" class="hover:text-yellow-500">Home</a>
-        <a href="about.html" class="hover:text-yellow-500">About</a>
-        <a href="portofolio.html" class="hover:text-yellow-500">Portofolio</a>
-        <a href="skills.html" class="hover:text-yellow-500">Skills</a>
-        <a href="contact.html" class="hover:text-yellow-500">Contact</a>
-      </nav>
-    </div>
-  </header>
+            <div class="flex items-center gap-2">
+                 <h1 class="text-xl font-bold">MyPortfolio</h1>
+            </div>
 
-  <section class="max-w-5xl mx-auto px-6 py-12">
-    <h1 class="text-3xl font-bold mb-4">About Me</h1>
-    <p class="text-gray-700 leading-relaxed">
-      Saya seorang Frontend Developer fokus pada React, Tailwind, dan UI/UX.
-    </p>
-  </section>
+            <nav class="flex gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-yellow-600 transition">Home</a>
+                <a href="about.html" class="text-yellow-600 font-bold border-b-2 border-yellow-600 pb-1">About</a>
+                <a href="portofolio.html" class="hover:text-yellow-600 transition">Portofolio</a>
+                <a href="skills.html" class="hover:text-yellow-600 transition">Skills</a>
+                <a href="contact.html" class="hover:text-yellow-600 transition">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-6 py-20 animate-slide-up">
+
+        <h1 class="text-4xl font-extrabold mb-16 text-center text-gray-900">
+            Tentang Saya
+        </h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 bg-white p-8 rounded-2xl shadow-xl border border-gray-100 h-full">
+                <h2 class="text-2xl font-bold mb-4 text-gray-800">Halo, Saya Izzu Kharirir Rozaky</h2>
+                <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                    Saya seorang <span class="font-semibold text-blue-600">Frontend Developer</span> yang bersemangat dengan pengalaman lebih dari [jumlah] tahun di industri pengembangan web. Saya fokus pada pembangunan antarmuka pengguna yang intuitif, responsif, dan performatif menggunakan teknologi modern seperti <span class="font-bold">React.js</span> dan <span class="font-bold">Tailwind CSS</span>.
+                </p>
+                <p class="text-lg leading-relaxed mb-4 text-gray-700">
+                    Dengan latar belakang yang kuat dalam <span class="font-semibold">desain UI/UX</span>, saya tidak hanya menulis kode, tetapi juga berupaya menciptakan pengalaman digital yang menyenangkan dan mudah digunakan bagi setiap pengguna.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Saya selalu antusias untuk belajar teknologi baru dan menerapkan praktik terbaik dalam setiap proyek.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
+                <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Keahlian Utama</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-3 bg-blue-50 rounded-lg shadow-sm">
+                        <span class="text-2xl">⚛️</span>
+                        <div>
+                            <h3 class="font-semibold">React.js</h3>
+                            <p class="text-sm text-gray-600">Advanced</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 bg-green-50 rounded-lg shadow-sm">
+                        <span class="text-2xl">💨</span>
+                        <div>
+                            <h3 class="font-semibold">Tailwind CSS</h3>
+                            <p class="text-sm text-gray-600">Advanced</p>
+                        </div>
+                    </div>
+                     <div class="flex items-center gap-4 p-3 bg-yellow-50 rounded-lg shadow-sm">
+                        <span class="text-2xl">💡</span>
+                        <div>
+                            <h3 class="font-semibold">JavaScript (ES6+)</h3>
+                            <p class="text-sm text-gray-600">Advanced</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-gray-100 mt-10">
+          <h2 class="text-3xl font-bold mb-10 text-center text-gray-800">Perjalanan Saya</h2>
+          
+          <div class="relative border-l-4 border-yellow-500 pl-6 ml-4">
+            
+            <div class="mb-8 relative">
+              <div class="absolute -left-9 top-1 bg-yellow-500 rounded-full w-6 h-6 flex items-center justify-center text-white text-sm font-bold">1</div>
+              <p class="text-sm text-gray-500 mb-1">Oktober 2025 - Sekarang</p>
+              <h3 class="text-xl font-semibold text-gray-900 mb-1">Junior IT Development</h3>
+              <p class="text-md font-medium text-yellow-600 mb-2">Codelines Unnes</p>
+              <p class="text-gray-700 leading-relaxed">Mengembangkan dan memelihara aplikasi web interaktif menggunakan React dan Tailwind CSS.</p>
+            </div>
+            
+            <div class="mb-8 relative">
+              <div class="absolute -left-9 top-1 bg-yellow-500 rounded-full w-6 h-6 flex items-center justify-center text-white text-sm font-bold">2</div>
+              <p class="text-sm text-gray-500 mb-1">2025 - Sekarang</p>
+              <h3 class="text-xl font-semibold text-gray-900 mb-1">Mahasiswa Teknik Komputer</h3>
+              <p class="text-md font-medium text-yellow-600 mb-2">Universitas Negeri Semarang</p>
+              <p class="text-gray-700 leading-relaxed">Fokus pada dasar-dasar ilmu komputer, algoritma, dan pengembangan perangkat lunak.</p>
+            </div>
+            
+          </div>
+        </div>
+        
+    </section>
 
 </body>
 </html>
