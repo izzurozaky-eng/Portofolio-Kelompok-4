@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    @keyframes slideUp {
+      0% { opacity: 0; transform: translateY(60px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-slide-up {
+      animation: slideUp 1s ease-out forwards;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- ✨ NAVBAR COPY DARI INDEX.HTML -->
+  <header class="py-6 border-b bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-6">
+
+      <!-- LEFT SIDE: ICONS -->
+      <div class="flex items-center gap-4">
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com" target="_blank" class="hover:opacity-70 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#0A66C2" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 
+                5v14c0 2.761 2.239 5 5 5h14c2.762 0 
+                5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 
+                19h-3v-10h3v10zm-1.5-11.268c-.966 
+                0-1.75-.79-1.75-1.764s.784-1.764 
+                1.75-1.764 1.75.79 1.75 
+                1.764-.784 1.764-1.75 1.764zm13.5 
+                11.268h-3v-5.604c0-1.337-.026-3.06-1.865-3.06-1.868 
+                0-2.155 1.458-2.155 2.964v5.7h-3v-10h2.879v1.367h.041c.401-.76 
+                1.379-1.562 2.84-1.562 3.04 0 3.6 2.002 3.6 
+                4.605v5.59z"/>
+          </svg>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com" target="_blank" class="hover:opacity-70 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#000" viewBox="0 0 24 24">
+            <path d="M12 .5C5.373.5 0 5.873 0 
+                12.5c0 5.289 3.438 9.773 8.207 
+                11.354.6.111.793-.261.793-.582 
+                0-.287-.01-1.047-.016-2.055-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 
+                1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 
+                1.304 3.492.997.108-.775.418-1.305.762-1.604-2.665-.303-5.467-1.332-5.467-5.93 
+                0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 
+                0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 
+                3.003-.404c1.018.005 2.045.138 3.003.404 2.291-1.552 
+                3.297-1.23 3.297-1.23.655 1.653.244 2.873.12 
+                3.176.77.84 1.235 1.911 1.235 
+                3.221 0 4.61-2.807 5.624-5.479 
+                5.921.43.372.823 1.102.823 
+                2.222 0 1.604-.015 2.896-.015 
+                3.286 0 .325.19.699.8.581C20.565 
+                22.27 24 17.788 24 
+                12.5 24 5.873 18.627.5 12 .5z"/>
+          </svg>
+        </a>
+
+        <h1 class="text-xl font-semibold ml-2">MyPortfolio</h1>
+      </div>
+
+      <!-- NAV -->
+      <nav class="flex gap-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-yellow-500">Home</a>
+        <a href="about.html" class="hover:text-yellow-500">About</a>
+        <a href="portofolio.html" class="text-yellow-600 hover:text-yellow-500">Portofolio</a>
+        <a href="skills.html" class="hover:text-yellow-500">Skills</a>
+        <a href="contact.html" class="hover:text-yellow-500">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO PROJECT: SWEET HOUSE COFFEE -->
+<!-- HERO PROJECT: SWEET HOUSE COFFEE -->
+<section class="w-full bg-gradient-to-b from-white to-yellow-50 py-20">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12 animate-slide-up">
+
+    <!-- LEFT CONTENT -->
+    <div class="flex-1">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+        Sweet House Coffee  
+        <span class="text-yellow-600">Kelompok 4</span>
+      </h1>
+
+      <p class="text-gray-700 text-lg mb-7 max-w-xl">
+        Project website coffee shop modern yang dibuat oleh kelompok 4.  
+        Mengusung tampilan elegan, smooth animation, dan tampilan UI stylish.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <!-- Live Project -->
+        <a href="https://replit.com/@izzurozaky1/Kelompok4-Sweet-HouseCoffe"
+           target="_blank"
+           class="px-6 py-3 bg-yellow-600 text-white rounded-xl shadow hover:bg-yellow-700 transition">
+          Lihat Project
+        </a>
+
+        <!-- Source Code -->
+        <a href="https://replit.com/@izzurozaky1"
+           target="_blank"
+           class="px-6 py-3 border border-yellow-600 text-yellow-700 rounded-xl hover:bg-yellow-100 transition">
+          Source Code
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT THUMBNAIL (BESAR) -->
+    <div class="flex-1 flex justify-center">
+      <div class="rounded-2xl overflow-hidden shadow-xl border bg-white hover:scale-105 transition">
+        <iframe 
+          src="https://replit.com/@izzurozaky1/Kelompok4-Sweet-HouseCoffe?embed=true"
+          class="w-[700px] h-[450px] md:w-[900px] md:h-[520px]"
+          frameborder="0">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-up {
+  animation: slideUp .7s ease-out forwards;
+}
+</style>
+
+
+  <!-- ✨ PORTFOLIO SECTION -->
+  <section class="max-w-6xl mx-auto px-6 py-16 animate-slide-up">
+
+    <h1 class="text-4xl font-bold text-center mb-12">My Projects</h1>
+
+    <!-- GRID PROJECTS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- CARD 1 -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80" 
+             class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">UI/UX Mobile App</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Desain aplikasi mobile dengan konsep modern, clean, dan fokus pada experience.
+          </p>
+          <a href="#" class="text-yellow-600 hover:underline">View Detail →</a>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" 
+             class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Website Landing Page</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Pembuatan landing page responsif menggunakan TailwindCSS + JavaScript.
+          </p>
+          <a href="#" class="text-yellow-600 hover:underline">View Detail →</a>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="bg-white shadow-lg rounded-2xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://images.unsplash.com/photo-1593642634443-44adaa06623a?auto=format&fit=crop&w=900&q=80" 
+             class="w-full h-48 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Web App Dashboard</h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Dashboard interaktif dengan grafik, tabel, dan UI profesional.
+          </p>
+          <a href="#" class="text-yellow-600 hover:underline">View Detail →</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
